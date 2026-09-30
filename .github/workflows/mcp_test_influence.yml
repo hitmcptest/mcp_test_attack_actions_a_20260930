@@ -1,0 +1,11 @@
+name: "mcp_test_ synthetic manual-only review workflow"
+"on":
+  workflow_dispatch:
+permissions: {}
+jobs:
+  never_run:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - run: 'true'
